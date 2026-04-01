@@ -72,14 +72,12 @@ The performance of each approach was evaluated using accuracy and F1-score metri
 | 3. LLMs and Prompt Engineering        | 84%      | 86%      |
 | 4. Sentence-Transformer (CLiCK)       | zero-shot | -       |
 
-**Quick Start (CLiCK 적용 버전)**
+**Start (CLiCK 적용 버전)**
+
+터미널에서 해당 커멘트 입력
 
 ```bash
-# 패키지 설치
-pip install sentence-transformers scikit-learn pandas joblib
-
-# 분류기 실행
-python _test_predict.py
+.venv/bin/python _test_predict.py
 ```
 
 데이터 재생성 및 모델 재학습이 필요한 경우:
@@ -92,7 +90,3 @@ python generate_data.py
 # 2. 모델 재학습
 python retrain_model.py
 ```
-
-**Conclusion**
-
-This project demonstrates the effectiveness of different approaches for prompt classification. The choice of the best approach depends on factors such as dataset size, computational resources, and desired accuracy levels. For the CLiCK project, the Sentence-Transformer based approach was adopted to support multilingual prompts (Korean/English) and an expanded 40-category taxonomy without requiring model retraining.
