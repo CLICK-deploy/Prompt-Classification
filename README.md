@@ -77,7 +77,15 @@ The performance of each approach was evaluated using accuracy and F1-score metri
 터미널에서 해당 커멘트 입력
 
 ```bash
-.venv/bin/python _test_predict.py
+# 1. 가상환경 생성 및 활성화
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# 2. 패키지 설치
+pip install sentence-transformers scikit-learn pandas nltk joblib
+
+# 3. 실행
+python _test_predict.py
 ```
 
 데이터 재생성 및 모델 재학습이 필요한 경우:
